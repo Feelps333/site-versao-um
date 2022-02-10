@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 .container-grid {
-  width: 1440px;
+  width: 1200px;
   height: 100%;
   margin: auto;
   display: flex;
@@ -32,7 +32,7 @@ header {
 }
 .banner {
   background-image: url(../imagens/banner.jpg);
-  height: 600px;
+  height: 800px;
   position: relative;
   background-repeat: none;
   background-size: cover;
@@ -42,6 +42,103 @@ header {
 }
 .texto-banner {
   width: 495px;
-  color: #4d4d3d;
+  color: #f0f0eb;
+  text-transform: uppercase;
   text-align: center;
+  font-family: 'Poppins' san-serif;
+  font-size: 25px;
+}
+.texto-banner h1 {
+  font-family: 'Poppins' sans-serif;
+  font-size: 75px;
+  font-weight: bold;
+}
+.texto-banner a {
+  background-color: #f0f0eb;
+  color: #4d4d3d;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px;
+  border-radius: 5px;
+}
+.texto-banner p {
+  color: #f0f0eb;
+  margin-bottom: 50px;
+}
+.secao-jogos {
+  background-color: #f0f0eb;
+}
+.jogos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.jogos img {
+  width: 300px;
+  right: auto;
+  margin: 5px;
+}
+.secao-sobre {
+  background-color: #f0f0eb;
+  width: 100%;
+  right: 685px;
+  padding: 50px;
+}
+.conteudo-sobre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.categorias img {
+  width: 500px;
+  right: auto;
+  margin: 5px;
+}
+.categorias a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #4d4d3d;
+}
+.barras {
+  width: 30px;
+  display: none;
+}
+.posicionamento-header {
+  position: relative;
+}
+@media screen and (max-width: 1200px) {
+  .container-grid {
+    width: 90%;
+  }
+  .menu a {
+    font-size: 16px;
+  }
+  .logo {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .barras {
+    display: inline-block;
+    width: 30px;
+  }
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 250px;
+    position: absolute;
+    top: 0;
+    right: 60px;
+    background-color: #f0f0eb;
+  }
+  .menu a {
+    text-align: center;
+    padding: 15px;
+  }
+  .menu-ativo {
+    display: flex;
+  }
+  .posicionamento-header {
+    position: relative;
+  }
 }
