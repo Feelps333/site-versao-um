@@ -14,7 +14,7 @@
   align-items: center;
 }
 header {
-  background-color: #f0f0eb;
+  background-color: black;
   height: 80px;
 }
 .menu {
@@ -24,7 +24,7 @@ header {
 }
 
 .menu a {
-  color: #4d4d3d;
+  color: white;
   text-decoration: none;
   text-transform: uppercase;
   font-family: 'Poppins', sans-serif;
@@ -42,7 +42,7 @@ header {
 }
 .texto-banner {
   width: 495px;
-  color: #f0f0eb;
+  color: white;
   text-transform: uppercase;
   text-align: center;
   font-family: 'Poppins' san-serif;
@@ -54,19 +54,19 @@ header {
   font-weight: bold;
 }
 .texto-banner a {
-  background-color: #f0f0eb;
-  color: #4d4d3d;
+  background-color: white;
+  color: black;
   text-decoration: none;
   text-transform: uppercase;
   padding: 15px;
   border-radius: 5px;
 }
 .texto-banner p {
-  color: #f0f0eb;
+  color: white;
   margin-bottom: 50px;
 }
 .secao-jogos {
-  background-color: #f0f0eb;
+  background-color: black;
 }
 .jogos {
   display: flex;
@@ -75,12 +75,12 @@ header {
 }
 .jogos img {
   width: 300px;
-  right: auto;
+  height: auto;
   margin: 5px;
   border-radius: 3%;
 }
 .secao-sobre {
-  background-color: #f0f0eb;
+  background-color: black;
   width: 100%;
   right: 685px;
   padding: 50px;
@@ -96,11 +96,12 @@ header {
   right: auto;
   margin: 5px;
   border-radius: 2%;
+  box-shadow: 0px 0px 10px #737373, 0px 0px 10px #737373;
 }
 .categorias a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #4d4d3d;
+  color: white;
 }
 .barras {
   width: 30px;
@@ -110,7 +111,7 @@ header {
   position: relative;
 }
 .news {
-  background-image: url(../imagens/banners3.jpg);
+  background-image: url(../imagens/news-banner.jpg);
   height: 800px;
   width: 100%;
   position: relative;
@@ -123,7 +124,70 @@ header {
 .noticias {
   font-size: 25px;
   padding: 25px;
-  color: #f0f0eb;
+  color: white;
+}
+footer {
+  background-color: black;
+}
+.rodape {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+.links {
+  color: white;
+}
+.links h2 {
+  font-size: 24px;
+}
+.links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+.links-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+.logo-rodape {
+  width: 200px;
+  height: 60px;
+  margin-top: 30px;
+}
+.sociais h2 {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.sociais form {
+  font-size: 14px;
+  display: flex;
+  margin-bottom: 8px;
+}
+.sociais input[type='email'] {
+  height: 37px;
+  width: 195px;
+}
+.sociais input[type='email']::placeholder {
+  color: #737373;
+  font-weight: bold;
+}
+button {
+  width: 156px;
+  color: white;
+  background-color: blue;
+  border: none;
+  font-size: 18px;
+}
+.siga-nos h2 {
+  color: white;
+}
+.siga-nos img {
+  width: 50px;
+  display: inline-block;
+  justify-content: space-between;
+  align-items: center;
 }
 @media screen and (max-width: 1200px) {
   .container-grid {
@@ -147,8 +211,8 @@ header {
     width: 250px;
     position: absolute;
     top: 0;
-    right: 60px;
-    background-color: #f0f0eb;
+    height: 60px;
+    background-color: white;
   }
   .menu a {
     text-align: center;
