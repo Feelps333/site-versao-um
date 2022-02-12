@@ -1,6 +1,3 @@
-function mostrarPopup() {
-  window.alert('Hello World')
-}
 let email = document.getElementById('campo-email')
 
 function enviarEmail() {
