@@ -18,8 +18,9 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-header {
+.cabecalho {
   height: 80px;
+  width: 100%;
 }
 .menu {
   width: 660px;
@@ -93,9 +94,8 @@ header {
   border-radius: 3%;
 }
 .secao-sobre {
-  /*background-color: black; */
   width: 100%;
-  right: 685px;
+  height: 685px;
   padding: 50px;
 }
 .conteudo-sobre {
@@ -112,6 +112,7 @@ header {
   box-shadow: 0px 0px 10px #737373, 0px 0px 10px #737373;
 }
 .categorias a {
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   color: white;
@@ -160,11 +161,15 @@ header {
 }
 .links h2 {
   font-size: 24px;
+  padding: 5px;
+  text-transform: uppercase;
+  text-align: left;
 }
 .links a {
   color: white;
   text-decoration: none;
   font-size: 14px;
+  text-align: center;
 }
 .links-footer {
   display: flex;
@@ -201,6 +206,11 @@ button {
   border: none;
   font-size: 18px;
 }
+.siga-nos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .siga-nos h2 {
   color: white;
 }
@@ -211,20 +221,92 @@ button {
   align-items: center;
 }
 @media screen and (max-width: 1200px) {
+  .cabecalho {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .container-grid {
-    width: 90%;
+    width: 100%;
   }
   .menu a {
-    font-size: 16px;
+    font-size: 20px;
   }
   .logo {
     width: 200px;
   }
+  .banner {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .posicao-texto {
+    display: flex;
+    justify-content: space-between;
+  }
+  .img-banner {
+    width: 300px;
+    height: 100%;
+  }
+  .texto-banner {
+    display: inline;
+    align-items: center;
+    width: 500px;
+    height: 100%;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+  }
+  .secao-jogos {
+    display: flex;
+  }
+  .jogos img {
+    width: 180px;
+    height: auto;
+  }
+  .secao-sobre {
+    height: 500px;
+    width: 100%;
+  }
+  .conteudo-sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .categorias img {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+  }
+  .categorias h2 {
+    font-size: 20px;
+  }
+  .news {
+    width: 100%;
+    height: 500px;
+  }
+  .noticias h2 {
+    font-size: 20px;
+  }
+  .noticias p {
+    font-size: 16px;
+  }
+  .logo-rodape {
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) {
+  .posicionamento-header {
+    flex-direction: row;
+    justify-content: space-around;
+  }
   .barras {
-    display: inline-block;
-    width: 30px;
+    display: inline;
+    background-color: #ff164b;
+    width: 40px;
   }
   .menu {
     display: none;
@@ -242,7 +324,73 @@ button {
   .menu-ativo {
     display: flex;
   }
-  .posicionamento-header {
-    position: relative;
+  .banner {
+    width: 100%;
+    height: 600px;
+  }
+  .posicao-texto {
+    font-family: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-banner {
+    display: none;
+  }
+  .texto-banner {
+    text-align: center;
+  }
+  .secao-jogos {
+    display: none;
+  }
+  .secao-sobre {
+    width: 100%;
+    height: auto;
+  }
+  .conteudo-sobre {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .categorias {
+    margin: 15px;
+  }
+  .categorias h2 {
+    text-align: center;
+  }
+  .categorias img {
+    width: 100%;
+  }
+  .news {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .rodape {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .links-footer {
+    width: 200px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .links {
+    width: 100%;
+    margin: 20px;
+  }
+  .logo-rodape {
+    display: none;
+  }
+  .sociais {
+    flex-direction: column;
+    align-items: center;
+  }
+  .siga-nos {
+    margin: 10px;
   }
 }
