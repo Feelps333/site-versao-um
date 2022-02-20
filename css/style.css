@@ -4,16 +4,18 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
 }
 body {
   background-image: url(../imagens/fundo.png);
-  width: 100%;
-  height: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 .container-grid {
-  width: 1200px;
+  width: auto;
   height: 100%;
-  margin: auto;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,17 +25,17 @@ body {
   width: 100%;
 }
 .menu {
-  width: 660px;
   display: flex;
   justify-content: space-between;
 }
-
 .menu a {
   color: white;
+  display: block;
+  padding: 10px;
+  margin-left: 10px;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'Poppins', sans-serif;
-  font-size: 20px;
+  font-size: 1rem;
 }
 .banner {
   background-image: linear-gradient(45deg, #ff164b, #ff1547, #090447, #000);
@@ -43,20 +45,23 @@ body {
   margin: 10px;
 }
 .posicao-texto {
-  justify-content: flex-end;
+  /*  justify-content: flex-end; */
 }
-.img-banner {
-  height: 500px;
-  display: flex;
-  justify-content: space-between;
+.imagens-banner img {
+  max-width: 100%;
+  width: 350px;
+  flex-wrap: wrap;
+  margin: 5px;
+  border-radius: 3%;
 }
 .texto-banner {
+  padding: 20px;
   width: 495px;
   color: white;
   text-transform: uppercase;
-  text-align: left;
-  font-family: 'Poppins' san-serif;
-  font-size: 25px;
+  text-align: center;
+  display: block;
+  font-size: 2rem;
 }
 .texto-banner h1 {
   font-family: 'Poppins' sans-serif;
@@ -84,18 +89,23 @@ body {
 }
 .jogos {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
+.jogos > div {
+  flex: 1 1 120px;
+}
 .jogos img {
+  max-width: 100%;
   width: 300px;
-  height: auto;
+  display: block;
   margin: 5px;
   border-radius: 3%;
 }
 .secao-sobre {
   width: 100%;
-  height: 685px;
+  height: 800px;
   padding: 50px;
 }
 .conteudo-sobre {
@@ -106,7 +116,6 @@ body {
 }
 .categorias img {
   width: 500px;
-  right: auto;
   margin: 5px;
   border-radius: 2%;
   box-shadow: 0px 0px 10px #737373, 0px 0px 10px #737373;
@@ -131,7 +140,6 @@ body {
   margin: 10px;
   height: 800px;
   width: 100%;
-  position: relative;
   background-repeat: none;
   background-size: cover;
   display: flex;

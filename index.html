@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Home - Drive Forza</title>
   </head>
-  <body onload="mostrarPopup()">
+  <body onload="renderizarNoticias()">
     <header class="cabecalho">
       <!-- Incio de Menu -->
       <div class="container-grid posicionamento-header">
@@ -24,27 +24,32 @@
           <a href="">News</a>
           <a href="">Season</a>
           <a href="">Horários</a>
-          <a href="">Cadrastro</a>
+          <a href="login.html">Cadrastro</a>
         </nav>
         <a href="" onclick="mostrarMenu()"
-          ><img class="barras" src="imagens/menu.png" alt="menu"
+          ><img id="barras" class="barras" src="imagens/menu.png" alt="menu"
         /></a>
       </div>
     </header>
     <!-- Fim De Menu -->
     <!-- Inicio Do Banner -->
-    <div class="banner">
+    <section class="banner">
       <div class="container-grid posicao-texto">
-        <div class="img-banner">
-          <img src="imagens/simpsons-png2-1.webp" alt="" />
+        <div class="imagens-banner">
+          <a href="#"><img src="imagens/formula-1.jpg" alt="banner-1" /></a>
+          <a href="#"><img src="imagens/nba-2k22.jpg" alt="banner-2" /></a>
+          <a href="#"><img src="imagens/fifa-2022.jpg" alt="banner-3" /></a>
+          <a href="#"><img src="imagens/nfl-2k21.jpg" alt="banner-4" /></a>
+          <a href="#"><img src="imagens/wwe-2022.png" alt="banner-4" /></a>
+          <a href="#"><img src="imagens/forza-5.png" alt="banner-4" /></a>
         </div>
         <div class="texto-banner">
           <h1>Seasons terão inicio em 2022</h1>
           <p>Não perca essa oportunidade</p>
-          <a href="">Inscreva-se</a>
+          <a href="login.html">Inscreva-se</a>
         </div>
       </div>
-    </div>
+    </section>
     <!-- Fim Do banner -->
     <!-- Inicio Banners -->
     <section class="secao-jogos">
@@ -83,8 +88,8 @@
     </section>
     <!-- fim conteudo-->
     <!-- Inicio noticias -->
-    <div class="news">
-      <div class="noticias">
+    <div id="espaco-noticias" class="news">
+      <!-- <div class="noticias">
         <h2>New NBA 2k22</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -137,7 +142,7 @@
           nobis modi voluptatibus cumque. Culpa repellat saepe omnis hic
           doloremque vel pariatur sequi ullam!
         </p>
-      </div>
+      </div> -->
     </div>
     <!-- Fim noticias -->
     <!-- Inicio footer -->
@@ -147,7 +152,7 @@
           <div class="links">
             <h2>Links Úteis</h2>
             <ul>
-              <li><a href="#">Regras de ultilizacao</a></li>
+              <li><a href="#">Regras de utilizacao</a></li>
               <li><a href="#">Suporte</a></li>
               <li><a href="#">Central de Ajuda</a></li>
               <li><a href="#">Contato</a></li>
@@ -191,7 +196,7 @@
         </div>
       </div>
     </footer>
-    <script>
+    <!-- <script>
       let menu = document.getElementById('menu')
 
       function mostrarMenu() {
@@ -201,7 +206,8 @@
           menu.style.display = 'none'
         }
       }
-    </script>
+    </script>-->
+    <script src="js/jquery-3.6.0.js"></script>
     <script src="js/script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
