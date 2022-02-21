@@ -1,6 +1,5 @@
+$(document).ready(function () {})
 /* 
-$( document ).ready(function() {
-
   $("#carrosel img:eq(0)").addClass("banner-ativo").show()
 
   setInterval(slide, 1000)
