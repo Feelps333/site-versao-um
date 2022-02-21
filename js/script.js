@@ -1,4 +1,5 @@
-/* $( document ).ready(function() {
+/* 
+$( document ).ready(function() {
 
   $("#carrosel img:eq(0)").addClass("banner-ativo").show()
 
@@ -11,7 +12,8 @@
           $(".banner-ativo").removeClass().hide()
           $("#carrosel img:eq(0)").addClass("banner-ativo").show()
       }
-  } */
+  }
+*/
 
 let email = document.getElementById('campo-email')
 
