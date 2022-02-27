@@ -12,6 +12,9 @@ body {
   margin: 0px;
   padding: 0px;
 }
+
+/* ################## Inicio Menu ################### */
+
 .container-grid {
   width: auto;
   height: 100%;
@@ -37,72 +40,26 @@ body {
   text-transform: uppercase;
   font-size: 1rem;
 }
-.banner {
-  background-image: linear-gradient(45deg, #ff164b, #ff1547, #090447, #000);
-  height: 800px;
-  opacity: 0.9;
-  border-radius: 1.5%;
-  margin: 10px;
-}
-.posicao-texto {
-  /*  justify-content: flex-end; */
-}
-.imagens-banner img {
-  max-width: 100%;
-  width: 350px;
-  flex-wrap: wrap;
-  margin: 5px;
-  border-radius: 3%;
-}
-.texto-banner {
-  padding: 20px;
-  width: 495px;
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
-  display: block;
-  font-size: 2rem;
-}
-.texto-banner h1 {
-  font-family: 'Poppins' sans-serif;
-  font-size: 75px;
-  font-weight: bold;
-}
-.texto-banner a {
-  background-color: white;
-  color: black;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 15px;
-  border-radius: 5px;
-}
-.texto-banner a:hover {
-  background-image: linear-gradient(90deg, #ff164b, #ff1547, #090447, #000);
-  color: #fff;
-}
-.texto-banner p {
-  color: white;
-  margin-bottom: 50px;
-}
-.secao-jogos {
-  /*  background-image: linear-gradient(90deg, #ff164b, #ff1547, #090447, #000); */
-}
-.jogos {
+
+/* ################## Fim Menu ################### */
+
+/* ################## Inicio Banner ################### */
+.carrosel {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
-.jogos > div {
-  flex: 1 1 120px;
+.carrosel img {
+  max-width: 1000px;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  box-shadow: 0px 0px 10px #ff164b, 0px 0px 10px #ff164b;
 }
-.jogos img {
-  max-width: 100%;
-  width: 300px;
-  display: block;
-  margin: 5px;
-  border-radius: 3%;
-}
+/* ################## Fim Banner ################### */
+
+/* ################## Inicio Secao Sobre ################### */
+
 .secao-sobre {
   width: 100%;
   height: 800px;
@@ -130,9 +87,11 @@ body {
   width: 30px;
   display: none;
 }
-.posicionamento-header {
-  position: relative;
-}
+
+/* ################## Fim Secao Sobre ################### */
+
+/* ################## Inicio News ################### */
+
 .news {
   background-image: linear-gradient(45deg, #ff164b, #ff1547, #090447, #000);
   opacity: 0.9;
@@ -159,6 +118,11 @@ body {
   text-transform: uppercase;
   font-size: 2em;
 }
+
+/* ################## Fim News ################### */
+
+/* ################## Inicio Rodape ################### */
+
 .rodape {
   display: flex;
   justify-content: space-between;
@@ -228,6 +192,9 @@ button {
   justify-content: space-between;
   align-items: center;
 }
+
+/* ################## Fim Rodape ################### */
+
 @media screen and (max-width: 1200px) {
   .cabecalho {
     width: 100%;
@@ -243,37 +210,6 @@ button {
   }
   .logo {
     width: 200px;
-  }
-  .banner {
-    width: 100%;
-    height: 600px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .posicao-texto {
-    display: flex;
-    justify-content: space-between;
-  }
-  .img-banner {
-    width: 300px;
-    height: 100%;
-  }
-  .texto-banner {
-    display: inline;
-    align-items: center;
-    width: 500px;
-    height: 100%;
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-  }
-  .secao-jogos {
-    display: flex;
-  }
-  .jogos img {
-    width: 180px;
-    height: auto;
   }
   .secao-sobre {
     height: 500px;
@@ -330,22 +266,6 @@ button {
   }
   .posicionamento-header {
     position: relative;
-  }
-  .banner {
-    width: 100%;
-    height: 600px;
-  }
-  .posicao-texto {
-    font-family: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .texto-banner {
-    text-align: center;
-  }
-  .secao-jogos {
-    display: none;
   }
   .secao-sobre {
     width: 100%;
