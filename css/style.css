@@ -16,7 +16,8 @@ body {
 /* ################## Inicio Menu ################### */
 
 .container-grid {
-  width: auto;
+  width: 100%;
+  max-width: 1200px;
   height: 100%;
   padding: 20px;
   display: flex;
@@ -40,7 +41,10 @@ body {
   text-transform: uppercase;
   font-size: 1rem;
 }
-
+.barras {
+  width: 30px;
+  display: none;
+}
 /* ################## Fim Menu ################### */
 
 /* ################## Inicio Banner ################### */
@@ -63,7 +67,9 @@ body {
 .secao-sobre {
   width: 100%;
   height: 800px;
-  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .conteudo-sobre {
   display: flex;
@@ -72,8 +78,9 @@ body {
   padding: 100px;
 }
 .categorias img {
-  width: 500px;
-  margin: 5px;
+  width: 100%;
+  max-width: 500px;
+  margin: 15px;
   border-radius: 2%;
   box-shadow: 0px 0px 10px #737373, 0px 0px 10px #737373;
 }
@@ -82,10 +89,6 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
-}
-.barras {
-  width: 30px;
-  display: none;
 }
 
 /* ################## Fim Secao Sobre ################### */
@@ -236,7 +239,7 @@ button {
     font-size: 20px;
   }
   .noticias p {
-    font-size: 16px;
+    font-size: 13px;
   }
   .logo-rodape {
     display: none;
@@ -284,6 +287,7 @@ button {
   }
   .categorias img {
     width: 100%;
+    min-width: 200px;
   }
   .news {
     width: 100%;
